@@ -1,0 +1,21 @@
+{
+  "Comment": "Stock Analysis Workflow",
+  "StartAt": "StockSearch",
+  "States": {
+    "StockSearch": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:REGION:ACCOUNT_ID:function:stock-search-lambda",
+      "Next": "DataFetching"
+    },
+    "DataFetching": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:REGION:ACCOUNT_ID:function:data-fetching-lambda",
+      "Next": "DataAnalysis"
+    },
+    "DataAnalysis": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:REGION:ACCOUNT_ID:function:data-analysis-lambda",
+      "End": true
+    }
+  }
+}

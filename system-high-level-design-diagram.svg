@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect x="10" y="10" width="780" height="580" fill="none" stroke="black" />
+  
+  <!-- EventBridge -->
+  <rect x="50" y="50" width="120" height="60" fill="lightblue" />
+  <text x="110" y="85" text-anchor="middle">EventBridge</text>
+  
+  <!-- Lambda Functions -->
+  <rect x="250" y="50" width="120" height="60" fill="lightyellow" />
+  <text x="310" y="85" text-anchor="middle">Stock Search</text>
+  
+  <rect x="250" y="150" width="120" height="60" fill="lightyellow" />
+  <text x="310" y="185" text-anchor="middle">Data Fetching</text>
+  
+  <rect x="250" y="250" width="120" height="60" fill="lightyellow" />
+  <text x="310" y="285" text-anchor="middle">Data Saving</text>
+  
+  <rect x="250" y="350" width="120" height="60" fill="lightyellow" />
+  <text x="310" y="385" text-anchor="middle">Data Analysis</text>
+  
+  <!-- S3 -->
+  <rect x="450" y="150" width="120" height="60" fill="lightgreen" />
+  <text x="510" y="185" text-anchor="middle">S3 Bucket</text>
+  
+  <!-- DynamoDB -->
+  <rect x="450" y="250" width="120" height="60" fill="lightpink" />
+  <text x="510" y="285" text-anchor="middle">DynamoDB</text>
+  
+  <!-- SQS -->
+  <rect x="450" y="350" width="120" height="60" fill="lightsalmon" />
+  <text x="510" y="385" text-anchor="middle">SQS</text>
+  
+  <!-- Step Functions -->
+  <rect x="650" y="200" width="120" height="60" fill="lightgrey" />
+  <text x="710" y="235" text-anchor="middle">Step Functions</text>
+  
+  <!-- Arrows -->
+  <line x1="170" y1="80" x2="250" y2="80" stroke="black" marker-end="url(#arrowhead)" />
+  <line x1="310" y1="110" x2="310" y2="150" stroke="black" marker-end="url(#arrowhead)" />
+  <line x1="310" y1="210" x2="310" y2="250" stroke="black" marker-end="url(#arrowhead)" />
+  <line x1="310" y1="310" x2="310" y2="350" stroke="black" marker-end="url(#arrowhead)" />
+  
+  <line x1="370" y1="180" x2="450" y2="180" stroke="black" marker-end="url(#arrowhead)" />
+  <line x1="370" y1="280" x2="450" y2="280" stroke="black" marker-end="url(#arrowhead)" />
+  <line x1="370" y1="380" x2="450" y2="380" stroke="black" marker-end="url(#arrowhead)" />
+  
+  <line x1="570" y1="180" x2="650" y2="220" stroke="black" marker-end="url(#arrowhead)" />
+  <line x1="570" y1="280" x2="650" y2="240" stroke="black" marker-end="url(#arrowhead)" />
+  
+  <!-- Arrow definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+</svg>

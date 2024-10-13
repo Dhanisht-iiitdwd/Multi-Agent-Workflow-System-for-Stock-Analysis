@@ -1,0 +1,10 @@
+{
+  "Name": "StockAnalysisScheduleRule",
+  "Description": "Triggers stock analysis workflow every 5 days",
+  "ScheduleExpression": "rate(5 days)",
+  "State": "ENABLED",
+  "Targets": [{
+    "Id": "StockSearchLambdaTarget",
+    "Arn": "arn:aws:lambda:REGION:ACCOUNT_ID:function:stock-search-lambda"
+  }]
+}

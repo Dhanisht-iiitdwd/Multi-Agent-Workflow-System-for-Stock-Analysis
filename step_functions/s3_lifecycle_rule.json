@@ -1,0 +1,14 @@
+{
+    "Rules": [
+      {
+        "ID": "Delete old stock data",
+        "Status": "Enabled",
+        "Filter": {
+          "Prefix": ""
+        },
+        "Expiration": {
+          "Days": 30
+        }
+      }
+    ]
+  }
